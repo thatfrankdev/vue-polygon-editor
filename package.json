@@ -3,13 +3,15 @@
   "description": "Simple Vue.js line-by-line svg polygon editor",
   "version": "1.0.0",
   "author": "Francis Cote <thatfrankdev@gmail.com>",
-  "main" : "dist/vue-polygon-editor.js",
+  "main" : "src/index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --config webpack.dev.config.js --hide-modules",
     "release": "cross-env NODE_ENV=production webpack --progress --config webpack.release.config.js --hide-modules"
   },
   "files": [
+    "src/index.js",
+    "src/PolygonEditor.vue",
     "dist/*",
     "README.md",
     "LICENSE"
